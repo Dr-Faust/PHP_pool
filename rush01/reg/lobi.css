@@ -1,0 +1,46 @@
+body{
+    background-image: url(../img/lobby.jpg);
+    background-size: 100%;
+}
+div.main{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+div.newgame{
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    bottom: 1%;
+    right: 0%;
+    background-image: url(../img/play-button.png);
+    opacity: 0.8;
+}
+input{
+    height: 200px;
+}
+.maindiv {
+				position: relative;
+                left: 40%;
+				width: 850px;
+				height: 800px;
+				background-color: darkgray;
+                opacity: 0.8;
+				font-weight: bold;
+				font-size:30px;
+				color: black;
+				text-align: center;
+				margin-left: 25%;
+				margin-top: 50px;
+				border-radius: 40px;
+			}
+			a:hover {
+				background-color: #864C9F;
+				color: white;
+			}
+			button:hover {
+				background-color: #864C9F;
+				color: white;
+			}

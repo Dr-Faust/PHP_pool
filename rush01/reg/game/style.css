@@ -1,0 +1,91 @@
+body
+{
+	font-family: Montserrat;
+	background-image: url(img/cosmos.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+#board{
+	float: left;
+}
+#panel{
+	float : left;
+}
+
+.necron{
+	background-image: url(img/cosmos.jpg);
+    background-position: center;
+    background-color: black;
+	display: inline-block;
+}
+div.banner button {
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    opacity: 0.8;
+    font-size: 20px;
+    color: #FFBF00;
+    text-shadow: 1px 0 red;
+}
+.image_necron{
+	float : left;
+	width: 60%;
+	height: 100%;
+}
+h1{
+    color:white;
+}
+h2{
+	text-align: center;
+    color: #FFB700;
+    text-shadow: -1px 0 red;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
+}
+li{
+	list-style: none;
+}
+.list_vaisseau{
+	color: #ecf0f1;
+	font-family: Arial;
+}
+div.banner{
+    position: absolute;
+    left: 2%;
+}
+div.banner img{
+    width: 500px;
+}
+.banner{
+	text-align: center;	
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.actif{
+	border: 3px green solid;
+}
+.inactif{
+	border: 0px;
+}
+.panel{
+	width: 600px;
+	height: 500px;
+	float: left;
+}
+.shipnamec{
+	font-size: 25px;
+}
+.shipstatsc{
+	font-size: 15px;
+}
+.shipweaponsc{
+	font-size: 15px;
+}

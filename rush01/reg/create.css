@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    background-image: url(../img/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    padding: 20px;
+}
+input{
+    text-align: left;
+    margin: auto auto auto auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    border-style: outset;
+}
+div{
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    opacity: 0.8;
+    border-style: outset;
+    border-radius: 70px;
+    position: absolute;
+    left: 38%;
+    top: 35%;
+}
+h1{
+    background-color: black;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    font-size: 30px;
+}

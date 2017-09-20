@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Change password</title>
+        <style>
+            body {font-family:Comic Sans; text-align: center;}
+            h1 {text-align: center;}
+            .field {
+                width: 340px;
+                height: 145px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: auto;
+                border-style: outset;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px #000000;
+            }
+        </style>
+    </head>
+    <body background="https://wallpaperscraft.com/image/star_art_sky_night_people_silhouette_98142_3840x2400.jpg">
+        <h1>Change password</h1>
+        <br />
+        <div class="field">
+            <form action="modif.php" method="post" >
+                <p>Login: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="login"></p>
+                <p>Old password: &nbsp &nbsp<input type="text" name="oldpw"></p>
+                <p>New password: &nbsp<input type="text" name="newpw"></p>
+                <button type="submit" name="submit" value="OK">Submit</button>
+            </form>
+        </div>
+    </body>
+<html>

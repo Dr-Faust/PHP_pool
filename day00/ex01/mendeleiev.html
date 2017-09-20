@@ -1,0 +1,793 @@
+<html>
+	<head>
+		<title>Periodic table</title>
+		<style>
+			table.big
+			{
+				width: 100%;
+				height: 80%;
+				border: 0.1vmin solid black;
+				border-collapse: collapse;
+			}
+			table.small
+			{
+				width: 100%;
+				height: 10%;
+				border: 0.1vmin solid black;
+				border-collapse: collapse;
+				font-size: 1.9vmin;
+			}
+			th, td
+			{
+				font-weight: bold;
+				text-align: center;
+				border: 0.4vmin solid white;
+			}
+			td.box
+			{
+				background-color: gainsboro;
+				width: 5%;
+				height: 4%;
+				font-size: 1.5vmin;
+			}
+			td.period 
+			{
+				background-color: gainsboro;
+				font-size: 1.5vmin;
+				height: 4%;
+			}
+			td.explain {width: 16.6%;}
+
+			td.elem_white {background-color: white;}
+			td.elem_lite_green {background-color: #A0FFA0;}
+			td.elem_blue {background-color: #C0FFFF;}
+			td.elem_red {background-color: #F66;}
+			td.elem_orange {background-color: #FFDEAD;}
+			td.elem_olive {background-color: #CC9;}
+			td.elem_yellow {background-color: #FF9;}
+			td.elem_grey {background-color: #F66;}
+			td.elem_pink {background-color: #FFC0C0;}
+			td.elem_lite_pink {background-color: #ffe0e0;}
+			td.elem_lite_grey {background-color: #f0f0f0;}
+			td.elem_lite_yellow {background-color: lightyellow;}
+			td.elem_lite_blue {background-color: lightblue;}
+			td.elem_lite_orange {background-color: #FFEFD8;}
+			td.elem_lite_purp {background-color: #FFBFFF;}
+			td.elem_purp {background-color: #F66;}
+			td.elem_green {background-color: mediumseagreen;}
+			p.big {font-size: 2.5vmin; text-align: center; margin: 0;}
+			p.small_left {font-size: 1.5vmin; text-align: left; margin: 0;}
+			p.small_right {font-size: 1.5vmin; text-align: right; margin: 0;}
+
+		</style>
+	</head>
+	<body>
+		<table class="big" contenteditable="true">
+			<tr>
+				<th colspan="19" style="background-color: plum; font-size: 2vmin">Періодична система хімічних елементів</th>
+			</tr>
+			<tr>
+				<td class="box"><b>Група →<br />Період ↓</b></td>
+				<td class="box">1</td>
+				<td class="box">2</td>
+				<td class="box">3</td>
+				<td class="box">4</td>
+				<td class="box">5</td>
+				<td class="box">6</td>
+				<td class="box">7</td>
+				<td class="box">8</td>
+				<td class="box">9</td>
+				<td class="box">10</td>
+				<td class="box">11</td>
+				<td class="box">12</td>
+				<td class="box">13</td>
+				<td class="box">14</td>
+				<td class="box">15</td>
+				<td class="box">16</td>
+				<td class="box">17</td>
+				<td class="box">18</Td>
+			</tr>
+			<TR>
+				<TD class="period">1</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">1</P>
+					<P class="big">H</P>
+					<P class="small_left">1.00794</P>
+				</TD>
+				<TD class="elem_white" colspan="16"></TD>
+				<TD class="elem_blue">
+					<P class="small_right">2</P>
+					<P class="big">He</P>
+					<P class="small_left">4.0026</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">2</TD>
+				<TD class="elem_red">
+					<P class="small_right">3</P>
+					<P class="big">Li</P>
+					<P class="small_left">6.941</P>
+				</TD>
+				<TD class="elem_orange">
+					<P class="small_right">4</P>
+					<P class="big">Be</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_white" colspan="10"></TD>
+				<TD class="elem_olive">
+					<P class="small_right">5</P>
+					<P class="big">B</P>
+					<P class="small_left">10.811</P>
+ 				</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">6</P>
+					<P class="big">C</P>
+					<P class="small_left">12.0107</P>
+				</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">7</P>
+					<P class="big">N</P>
+					<P class="small_left">14.0067</P>
+				</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">8</P>
+					<P class="big">O</P>
+					<P class="small_left">15.9994</P>
+				</TD>
+				<TD class="elem_yellow">
+					<P class="small_right">9</P>
+					<P class="big">F</P>
+					<P class="small_left">18.9984</P>
+				</TD>
+				<TD class="elem_blue">
+					<P class="small_right">10</P>
+					<P class="big">Ne</P>
+					<P class="small_left">20.1797</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">3</TD>
+				<TD class="elem_red">
+					<P class="small_right">11</P>
+					<P class="big">Na</P>
+					<P class="small_left">22.9897</P>
+				</TD>
+				<TD class="elem_orange">
+					<P class="small_right">12</P>
+					<P class="big">Mg</P>
+					<P class="small_left">24.3050</P>
+				</TD>
+				<TD class="elem_white" colspan="10"></TD>
+				<TD class="elem_grey">
+					<P class="small_right">13</P>
+					<P class="big">Al</P>
+					<P class="small_left">26.9815</P>
+				</TD>
+				<TD class="elem_olive">
+					<P class="small_right">14</P>
+					<P class="big">Si</P>
+					<P class="small_left">28.0855</P>
+				</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">15</P>
+					<P class="big">P</P>
+					<P class="small_left">30.9737</P>
+				</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">16</P>
+					<P class="big">S</P>
+					<P class="small_left">32.065</P>
+				</TD>
+				<TD class="elem_yellow">
+					<P class="small_right">17</P>
+					<P class="big">Cl</P>
+					<P class="small_left">35.453</P>
+				</TD>
+				<TD class="elem_blue">
+					<P class="small_right">18</P>
+					<P class="big">Ar</P>
+					<P class="small_left">39.948</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">4</TD>
+				<TD class="elem_red">
+					<P class="small_right">19</P>
+					<P class="big">K</P>
+					<P class="small_left">39.0983</P>
+				</TD>
+				<TD class="elem_orange">
+					<P class="small_right">20</P>
+					<P class="big">Ca</P>
+					<P class="small_left">40.078</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">21</P>
+					<P class="big">Sc</P>
+					<P class="small_left">44.9559</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">22</P>
+					<P class="big">Ti</P>
+					<P class="small_left">47.867</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">23</P>
+					<P class="big">V</P>
+					<P class="small_left">50.9415</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">24</P>
+					<P class="big">Cr</P>
+					<P class="small_left">51.9961</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">25</P>
+					<P class="big">Mn</P>
+					<P class="small_left">54.938</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">26</P>
+					<P class="big">Fe</P>
+					<P class="small_left">55.845</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">27</P>
+					<P class="big">Co</P>
+					<P class="small_left">58.933</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">28</P>
+					<P class="big">Ni</P>
+					<P class="small_left">58.6934</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">29</P>
+					<P class="big">Cu</P>
+					<P class="small_left">63.546</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">30</P>
+					<P class="big">Zn</P>
+					<P class="small_left">65.38</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">31</P>
+					<P class="big">Ga</P>
+					<P class="small_left">69.723</P>
+				</TD>
+				<TD class="elem_olive">
+					<P class="small_right">32</P>
+					<P class="big">Ge</P>
+					<P class="small_left">72.63</P>
+				</TD>
+				<TD class="elem_olive">
+					<P class="small_right">33</P>
+					<P class="big">As</P>
+					<P class="small_left">74.9216</P>
+				</TD>
+				<TD class="elem_lite_green">
+					<P class="small_right">34</P>
+					<P class="big">Se</P>
+					<P class="small_left">78.96</P>
+				</TD>
+				<TD class="elem_yellow">
+					<P class="small_right">35</P>
+					<P class="big">Br</P>
+					<P class="small_left">79.904</P>
+				</TD>
+				<TD class="elem_blue">
+					<P class="small_right">36</P>
+					<P class="big">Cr</P>
+					<P class="small_left">83.798</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">5</TD>
+				<TD class="elem_red">
+					<P class="small_right">37</P>
+					<P class="big">Rb</P>
+					<P class="small_left">85.468</P>
+				</TD>
+				<TD class="elem_orange">
+					<P class="small_right">38</P>
+					<P class="big">Sr</P>
+					<P class="small_left">87.62</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">38</P>
+					<P class="big">Y</P>
+					<P class="small_left">88.906</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">40</P>
+					<P class="big">Zr</P>
+					<P class="small_left">91.224</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">41</P>
+					<P class="big">Nb</P>
+					<P class="small_left">92.906</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">42</P>
+					<P class="big">Mo</P>
+					<P class="small_left">95.96</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">43</P>
+					<P class="big">Tc</P>
+					<P class="small_left">97.907</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">44</P>
+					<P class="big">Ru</P>
+					<P class="small_left">101.07</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">45</P>
+					<P class="big">Rh</P>
+					<P class="small_left">102.91</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">46</P>
+					<P class="big">Pd</P>
+					<P class="small_left">106.42</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">47</P>
+					<P class="big">Ag</P>
+					<P class="small_left">107.87</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">48</P>
+					<P class="big">Cd</P>
+					<P class="small_left">112.41</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">49</P>
+					<P class="big">In</P>
+					<P class="small_left">114.82</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">50</P>
+					<P class="big">Sn</P>
+					<P class="small_left">118.71</P>
+				</TD>
+				<TD class="elem_olive">
+					<P class="small_right">51</P>
+					<P class="big">Sb</P>
+					<P class="small_left">121.76</P>
+				</TD>
+				<TD class="elem_olive">
+					<P class="small_right">52</P>
+					<P class="big">Te</P>
+					<P class="small_left">127.60</P>
+				</TD>
+				<TD class="elem_yellow">
+					<P class="small_right">53</P>
+					<P class="big">I</P>
+					<P class="small_left">126.90</P>
+				</TD>
+				<TD class="elem_blue">
+					<P class="small_right">54</P>
+					<P class="big">Xe</P>
+					<P class="small_left">131.29</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">6</TD>
+				<TD class="elem_red">
+					<P class="small_right">55</P>
+					<P class="big">Cs</P>
+					<P class="small_left">132.91</P>
+				</TD>
+				<TD class="elem_orange">
+					<P class="small_right">56</P>
+					<P class="big">Ba</P>
+					<P class="small_left">137.33</P>
+				</TD>
+				<TD class="elem_white" style="font-size: 2vmin">*</TD>
+				<TD class="elem_pink">
+					<P class="small_right">72</P>
+					<P class="big">Hf</P>
+					<P class="small_left">178.49</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">73</P>
+					<P class="big">Ta</P>
+					<P class="small_left">180.94</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">74</P>
+					<P class="big">W</P>
+					<P class="small_left">183.85</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">75</P>
+					<P class="big">Re</P>
+					<P class="small_left">186.2</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">76</P>
+					<P class="big">Os</P>
+					<P class="small_left">190.2</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">77</P>
+					<P class="big">Ir</P>
+					<P class="small_left">192.2</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">78</P>
+					<P class="big">Pt</P>
+					<P class="small_left">195.09</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">79</P>
+					<P class="big">Au</P>
+					<P class="small_left">196.96</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">80</P>
+					<P class="big">Hg</P>
+					<P class="small_left">200.59</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">81</P>
+					<P class="big">Ti</P>
+					<P class="small_left">204.37</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">82</P>
+					<P class="big">Pb</P>
+					<P class="small_left">207.19</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">83</P>
+					<P class="big">Bi</P>
+					<P class="small_left">208.98</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">84</P>
+					<P class="big">Po</P>
+					<P class="small_left">208.98</P>
+				</TD>
+				<TD class="elem_yellow">
+					<P class="small_right">85</P>
+					<P class="big">At</P>
+					<P class="small_left">209.98</P>
+				</TD>
+				<TD class="elem_blue">
+					<P class="small_right">86</P>
+					<P class="big">Rn</P>
+					<P class="small_left">222.01</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">7</TD>
+				<TD class="elem_red">
+					<P class="small_right">87</P>
+					<P class="big">Fr</P>
+					<P class="small_left">223.02</P>
+				</TD>
+				<TD class="elem_orange">
+					<P class="small_right">88</P>
+					<P class="big">Ra</P>
+					<P class="small_left">226.02</P>
+				</TD>
+				<TD class="elem_white" style="font-size: 2vmin">**</TD>
+				<TD class="elem_pink">
+					<P class="small_right">104</P>
+					<P class="big">Rf</P>
+					<P class="small_left">261</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">105</P>
+					<P class="big">Db</P>
+					<P class="small_left">268</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">106</P>
+					<P class="big">Sg</P>
+					<P class="small_left">271</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">107</P>
+					<P class="big">Bh</P>
+					<P class="small_left">267</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">108</P>
+					<P class="big">Hs</P>
+					<P class="small_left">269</P>
+				</TD>
+				<TD class="elem_lite_pink">
+					<P class="small_right">109</P>
+					<P class="big">Mt</P>
+					<P class="small_left">276</P>
+				</TD>
+				<TD class="elem_lite_pink">
+					<P class="small_right">110</P>
+					<P class="big">Ds</P>
+					<P class="small_left">281</P>
+				</TD>
+				<TD class="elem_lite_pink">
+					<P class="small_right">111</P>
+					<P class="big">Rg</P>
+					<P class="small_left">280</P>
+				</TD>
+				<TD class="elem_pink">
+					<P class="small_right">112</P>
+					<P class="big">Cn</P>
+					<P class="small_left">285</P>
+				</TD>
+				<TD class="elem_lite_grey">
+					<P class="small_right">113</P>
+					<P class="big">Uut</P>
+					<P class="small_left">284</P>
+				</TD>
+				<TD class="elem_grey">
+					<P class="small_right">114</P>
+					<P class="big">Fl</P>
+					<P class="small_left">289</P>
+				</TD>
+				<TD class="elem_lite_grey">
+					<P class="small_right">115</P>
+					<P class="big">Mc</P>
+					<P class="small_left">288</P>
+				</TD>
+				<TD class="elem_lite_grey">
+					<P class="small_right">116</P>
+					<P class="big">Lv</P>
+					<P class="small_left">293</P>
+				</TD>
+				<TD class="elem_lite_yellow">
+					<P class="small_right">117</P>
+					<P class="big">Uus</P>
+					<P class="small_left">294</P>
+				</TD>
+				<TD class="elem_lite_blue">
+					<P class="small_right">118</P>
+					<P class="big">Uuo</P>
+					<P class="small_left">294</P>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="period">8</TD>
+				<TD class="elem_pink">
+					<P class="small_right">119</P>
+					<P class="big">Uue</P>
+					<P class="small_left">316</P>
+				</TD>
+				<TD class="elem_lite_orange">
+					<P class="small_right">120</P>
+					<P class="big">Ubn</P>
+					<P class="small_left">320</P>
+				</TD>
+				<TD class="elem_white" style="font-size: 2vmin">***</TD>
+				<TD class="elem_white" colspan="15"></TD>
+			</TR>
+			<TR>
+				<TD class="period" colspan="2" rowspan="3" style="background-color: white">
+					<IMG SRC="http://rustest.spb.ru/public/upload/media/Image/mendeleev/5/2.bmp" style="width: 74%" style="height: 74%">
+				</TD>
+				<TD class="elem_lite_grey" style="font-size: 2vmin">*</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">57</P>
+					<P class="big">La</P>
+					<P class="small_left">138.91</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">58</P>
+					<P class="big">Ce</P>
+					<P class="small_left">140.12</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">59</P>
+					<P class="big">Pr</P>
+					<P class="small_left">140.90</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">60</P>
+					<P class="big">Nd</P>
+					<P class="small_left">144.24</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">61</P>
+					<P class="big">Pm</P>
+					<P class="small_left">145</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">62</P>
+					<P class="big">Sm</P>
+					<P class="small_left">150.35</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">63</P>
+					<P class="big">Eu</P>
+					<P class="small_left">151.96</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">64</P>
+					<P class="big">Gd</P>
+					<P class="small_left">157.25</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">65</P>
+					<P class="big">Tb</P>
+					<P class="small_left">158.92</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">66</P>
+					<P class="big">Dy</P>
+					<P class="small_left">162.50</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">67</P>
+					<P class="big">Ho</P>
+					<P class="small_left">164.93</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">68</P>
+					<P class="big">Er</P>
+					<P class="small_left">167.26</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">69</P>
+					<P class="big">Tm</P>
+					<P class="small_left">168.93</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">70</P>
+					<P class="big">Yb</P>
+					<P class="small_left">173.04</P>
+				</TD>
+				<TD class="elem_lite_purp">
+					<P class="small_right">71</P>
+					<P class="big">Lu</P>
+					<P class="small_left">174.97</P>
+				</TD>
+				<TD class="elem_white"></TD>
+			</TR>
+			<TR>
+				<TD class="elem_lite_grey" style="font-size: 2vmin">**</TD>
+				<TD class="elem_purp">
+					<P class="small_right">89</P>
+					<P class="big">Ac</P>
+					<P class="small_left">227.02</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">90</P>
+					<P class="big">Th</P>
+					<P class="small_left">232.03</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">91</P>
+					<P class="big">Pa</P>
+					<P class="small_left">231.03</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">92</P>
+					<P class="big">U</P>
+					<P class="small_left">238.02</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">93</P>
+					<P class="big">Np</P>
+					<P class="small_left">237.04</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">94</P>
+					<P class="big">Pu</P>
+					<P class="small_left">244.06</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">95</P>
+					<P class="big">Am</P>
+					<P class="small_left">243.06</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">96</P>
+					<P class="big">Cm</P>
+					<P class="small_left">247.07</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">97</P>
+					<P class="big">Bk</P>
+					<P class="small_left">247.07</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">98</P>
+					<P class="big">Cf</P>
+					<P class="small_left">251.07</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">99</P>
+					<P class="big">Es</P>
+					<P class="small_left">252.08</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">100</P>
+					<P class="big">Fm</P>
+					<P class="small_left">257.08</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">101</P>
+					<P class="big">Md</P>
+					<P class="small_left">258.09</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">102</P>
+					<P class="big">No</P>
+					<P class="small_left">259.10</P>
+				</TD>
+				<TD class="elem_purp">
+					<P class="small_right">103</P>
+					<P class="big">Lr</P>
+					<P class="small_left">260.10</P>
+				</TD>
+				<TD class="elem_white"></TD>
+			</TR>
+			<TR>
+				<TD class="elem_lite_grey" style="font-size: 2vmin">***</TD>
+				<TD class="elem_green">
+					<P class="small_right">121</P>
+					<P class="big">Ubu</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_green">
+					<P class="small_right">122</P>
+					<P class="big">Ubb</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_green">
+					<P class="small_right">123</P>
+					<P class="big">Ubt</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_green">
+					<P class="small_right">124</P>
+					<P class="big">Ubq</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_green">
+					<P class="small_right">125</P>
+					<P class="big">Ubp</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_green">
+					<P class="small_right">126</P>
+					<P class="big">Ubh</P>
+					<P class="small_left">9.0121</P>
+				</TD>
+				<TD class="elem_white" colspan="10"></TD>
+			</TR>
+			<table class="small" contenteditable="true">
+				<tr>
+					<td class="explain" style="background-color: #F66; height: 30%">Лужні метали</td>
+					<td class="explain" style="background-color: #FFDEAD">Лужноземельні метали</td>
+					<td class="explain" style="background-color: #FFBFFF">Лантаноїди</td>
+					<td class="explain" style="background-color: #F9C">Актиноїди</td>
+					<td class="explain" style="background-color: #FFC0C0">Перехідні метали</td>
+					<td class="explain" style="background-color: #CCC">Постперехідні метали</td>
+				</tr>
+				<tr>
+					<td colspan="6" style="background-color: grey; height: 20%">Метали</td>
+				</tr>
+				<tr>
+					<td class="explain" rowspan="2" style="background-color: #CC9">Напівметали</td>
+					<td class="explain" style="background-color: #A0FFA0; height: 30%">Інші метали</td>
+					<td class="explain" style="background-color: #FF9">Галогени</td>
+					<td class="explain" style="background-color: #C0FFFF">Благородні гази</td>
+					<td class="explain" style="background-color: mediumseagreen">Суперактиноїди</td>
+					<td class="explain" style="background-color: #f0f0f0"></td>
+				</tr>
+				<tr>
+					<td class="explain" colspan="3" style="background-color: #B0E0E6; height: 20%">Неметали</td>
+					<td class="explain" colspan="2" style="background-color: #f0f0f0">Властивості невідомі</td>
+				</tr>
+			</table>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Balloon</title>
+		<style>
+			#balloon {
+				width: 200px;
+				height: 200px;
+				border-radius: 100%;
+				background-color: red;
+				margin-right: auto;
+				margin-left: auto;
+				position: relative;
+				top: 40%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="balloon" onclick="clickOn()" onmouseout="mouseOut()"></div>
+		<script>
+			var color = 0, size = 200;
+			var ball = document.getElementById("balloon");
+			function changeColor() {
+			   switch (color % 3) {
+                    case 0:
+                        ball.setAttribute("style", "background-color: green;");
+                        break;
+                    case 1:
+                        ball.setAttribute("style", "background-color: blue;");
+                        break;
+				   case 2:
+                        ball.setAttribute("style", "background-color: red;");
+                        break;
+                }
+			}
+			function clickOn() {
+				color++;
+				size += 10;
+                if (size > 420)
+                    size = 200;
+                changeColor();
+                ball.style.width = size + "px";
+                ball.style.height = size + "px";
+			}
+			function mouseOut() {
+			    color += 2;
+			    changeColor();
+			    if (size > 200) {
+			        size -= 5;
+			        ball.style.width = size + "px";
+                    ball.style.height = size + "px";
+				}
+            }
+		</script>
+	</body>
+</html>

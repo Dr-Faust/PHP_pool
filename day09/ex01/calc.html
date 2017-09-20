@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Calculator</title>
+      <style>
+            body {font-family: Comic Sans; text-align: center;}
+            h1 {text-align: center;}
+            .field {
+                width: 350px;
+                height: 80px;
+                margin-right: auto;
+                margin-left: auto;
+                position: relative;
+                top: 20%;
+                border-style: outset;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px #000000;
+            }
+        </style>
+    </head>
+    <body background="https://wallpaperscraft.com/image/star_art_sky_night_people_silhouette_98142_3840x2400.jpg">
+    <div class="field">
+        <form id="form">
+            <p>
+                <input type="text" id="val_1" placeholder="First value">
+                <select id="sign" name="option">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                    <option>%</option>
+                </select>
+                <input type="text" id="val_2" placeholder="Second value">
+            </p>
+            <p><button type="submit" onclick="calc()">Try me!</button></p>
+        </form>
+    </div>
+    </body>
+    <script>
+        var val_1 = document.forms["form"]["val_1"];
+        var val_2 = document.forms["form"]["val_2"];
+        var sign = document.forms["form"]["option"];
+        function calc() {
+            if (!checkNumber(val_1.value) || !checkNumber(val_2.value)) {
+                alert("Error :(");
+                return (false);
+            }
+            var left = Number(val_1.value);
+            var right = Number(val_2.value);
+            switch (sign.value) {
+                case "+":
+                    console.log(left + right);
+                    alert(left + right);
+                    break;
+                case "-":
+                    console.log(left - right);
+                    alert(left - right);
+                    break;
+                case "*":
+                    console.log(left * right);
+                    alert(left * right);
+                    break;
+                case "/":
+                    if (!right) {
+                        console.log("It’s over 9000!");
+                        alert("It’s over 9000!");
+                    }
+                    else {
+                        console.log(left / right);
+                        alert(left / right);
+                    }
+                    break;
+               case "%":
+                    if (!right) {
+                        console.log("It’s over 9000!");
+                        alert("It’s over 9000!");
+                    }
+                    else {
+                        console.log(left % right);
+                        alert(left % right);
+                    }
+                    break;
+            }
+            function checkNumber(num)
+            {
+                if (isNaN(num) || num === "" || num < 0)
+                    return (false);
+                return (true);
+            }
+        }
+        function spam() {
+            alert("Please, use me...");
+        }
+        setInterval (spam, 30000);
+    </script>
+<html>
